@@ -1,4 +1,4 @@
-# dsh-restart-button
+# dsh-easyrestart-button
 
 为 DeepSeek Harness 桌面版（Electron）提供一个位于窗口标题栏的重启按钮：点击后在原位展开确认气泡，确认后重启整个应用。
 
@@ -12,7 +12,7 @@
 
 ```powershell
 # 从本地目录安装（开发与自用）
-dsh plugin --profile desktop add link:D:/path/to/dsh-restart-button
+dsh plugin --profile desktop add link:D:/path/to/dsh-easyrestart-button
 ```
 
 随后将包名加入该 profile 的 `package.json` 中 `dsh.profile.bundles` 字段：
@@ -21,7 +21,7 @@ dsh plugin --profile desktop add link:D:/path/to/dsh-restart-button
 {
   "dsh": {
     "profile": {
-      "bundles": ["dsh-restart-button"]
+      "bundles": ["dsh-easyrestart-button"]
     }
   }
 }
@@ -32,7 +32,7 @@ dsh plugin --profile desktop add link:D:/path/to/dsh-restart-button
 卸载方式：
 
 ```powershell
-dsh plugin --profile desktop remove dsh-restart-button
+dsh plugin --profile desktop remove dsh-easyrestart-button
 ```
 
 并删除 `dsh.profile.bundles` 中对应的条目。
@@ -41,7 +41,7 @@ dsh plugin --profile desktop remove dsh-restart-button
 
 ```
 按钮（client 半，DOM 挂载）
-  └─ POST /dsh-restart-button/api/restart[?force=1]
+  └─ POST /dsh-easyrestart-button/api/restart[?force=1]
         └─ host 半（Cordis 插件，注册于 webServer）
               ├─ 守卫：检查运行中的任务与正在安装的插件 → 返回 409 或直接拒绝
               └─ 写入交接描述并拉起 detached helper

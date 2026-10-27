@@ -1,5 +1,5 @@
 {
-  "name": "dsh-restart-button",
+  "name": "dsh-easyrestart-button",
   "version": "0.3.0",
   "description": "DSH desktop restart button in the window title bar: one click, in-place confirm, whole-app restart. Restores maximized window and clears the draft. 桌面版标题栏重启按钮：就地二次确认、整端重启，重启后恢复最大化并清掉输入框草稿。",
   "type": "module",
@@ -50,10 +50,10 @@
   "author": "naili0712",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naili0712/dsh-restart-button.git"
+    "url": "git+https://github.com/naili0712/dsh-easyrestart-button.git"
   },
   "bugs": {
-    "url": "https://github.com/naili0712/dsh-restart-button/issues"
+    "url": "https://github.com/naili0712/dsh-easyrestart-button/issues"
   },
-  "homepage": "https://github.com/naili0712/dsh-restart-button#readme"
+  "homepage": "https://github.com/naili0712/dsh-easyrestart-button#readme"
 }
