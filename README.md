@@ -1,5 +1,9 @@
 # dsh-easyrestart-button
 
+> **AI 辅助声明**：本插件由 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 辅助创建
+> —— 代码与文档均在与 DSH 的会话协作中产出，由仓库所有者审核后发布。
+> 使用前请自行验证是否适合你的环境。
+
 为 DeepSeek Harness 桌面版（Electron）提供一个位于窗口标题栏的重启按钮：点击后在原位展开确认气泡，确认后重启整个应用。
 
 ## 它做什么
