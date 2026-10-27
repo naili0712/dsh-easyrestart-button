@@ -1,0 +1,59 @@
+{
+  "name": "dsh-restart-button",
+  "version": "0.3.0",
+  "description": "DSH desktop restart button in the window title bar: one click, in-place confirm, whole-app restart. Restores maximized window and clears the draft. 桌面版标题栏重启按钮：就地二次确认、整端重启，重启后恢复最大化并清掉输入框草稿。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "restart",
+    "electron",
+    "titlebar"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ],
+      "platform": "web"
+    }
+  },
+  "author": "naili0712",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naili0712/dsh-restart-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naili0712/dsh-restart-button/issues"
+  },
+  "homepage": "https://github.com/naili0712/dsh-restart-button#readme"
+}
