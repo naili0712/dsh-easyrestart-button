@@ -3,12 +3,3 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
-
-# 凭据与本地配置：永不入库
-.env
-.env.*
-*.key
-*.pem
-.secrets/
-config.local.json
-*.local.json
