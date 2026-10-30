@@ -1,6 +1,6 @@
 {
   "name": "dsh-easyrestart-button",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "DSH desktop restart button in the window title bar: one click, in-place confirm, whole-app restart. Restores the window state and clears the draft. 桌面版标题栏重启按钮：就地二次确认、整端重启，重启后恢复窗口状态并清掉输入框草稿。",
   "type": "module",
   "main": "lib/index.js",
