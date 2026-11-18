@@ -31,6 +31,20 @@ dsh plugin --profile desktop add link:D:/path/to/dsh-easyrestart-button
 }
 ```
 
+本包自带的 `cordis.patch.yml` 会把插件挂进加载树（`id: easyrestart-button`），
+所以上面两步做完、重启 DSH，标题栏「编辑」右侧就会出现「重启」按钮，不需要再手写配置。
+
+> **0.4.1 及更早版本**的 `cordis.patch.yml` 是空的。只把包名加进 `bundles`
+> 不会加载插件，而且**不报任何错**，表现就是标题栏没有按钮。
+> 升级到 0.4.2 后重新安装即可；如果不想升级，在 profile 的
+> `cordis.patch.yml` 里补一条：
+
+```yaml
+- insert:
+    - id: easyrestart-button
+      name: dsh-easyrestart-button
+```
+
 重启 DSH 后生效。卸载：
 
 ```powershell

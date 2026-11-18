@@ -1,2 +1,11 @@
-# host 半由 profile 的 cordis.patch.yml 显式 insert（见 README）；这里留空。
-[]
+# 插件自身的加载条目。
+#
+# DSH 的 profile 只把各 bundle 的 patch 叠加到加载树上：把本包列进
+# dsh.profile.bundles 而不在这里 insert，树上就没有本插件的 entry，
+# 宿主半与客户端半都不会被加载 —— 表现是标题栏没有「重启」按钮，
+# 而且整个过程不报错，很难查。
+#
+# 停用/回滚：给条目加 disabled: true，或删掉下面整段。
+- insert:
+    - id: easyrestart-button
+      name: dsh-easyrestart-button
